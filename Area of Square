@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main {
+    public static void main (String[] args){
+       // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+
+
+                Scanner sc=new Scanner(System.in);
+                int s = sc.nextInt();
+                System.out.println(s*s);    // Your code here
+            }
+        }
