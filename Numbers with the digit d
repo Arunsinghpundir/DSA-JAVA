@@ -1,0 +1,29 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+
+class Main {
+	public static void main (String[] args) {
+       Scanner sc= new Scanner(System.in);
+	   int N = sc.nextInt();
+	   int D = sc.nextInt();
+	  for (int i = 0; i <= N; i++) 
+ 		if (i == D || isDigitPresent(i, D)) // checking for digit
+        System.out.print(i + " ");
+		}
+	                  // Your code here
+	static boolean isDigitPresent(int N, int D)
+    {
+        // Break loop if D is present as digit
+        while (N > 0)
+        {
+            if (N % 10 == D)
+                break;
+ 
+            N = N / 10;
+        }
+ 
+        // If loop broke
+        return (N > 0);
+    }
+}
